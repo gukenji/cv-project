@@ -1,11 +1,23 @@
-.App {
-  text-align: center;
+html,
+body,
+#root,
+.App,
+.main,
+.sidebar {
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App {
+  display: grid;
+  grid-template-areas: 
+    "contacts  name name name"
+    "contacts  about about about"
+    "skills    prof prof prof"
+    "skills    prof prof prof"
+    "social    edu  edu  edu"
+    "social    edu  edu  edu";
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

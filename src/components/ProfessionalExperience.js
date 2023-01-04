@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import '../ProfessionalExperience.css';
+import '../style/ProfessionalExperience.css';
 
 class ProfessionalExperience extends Component {
   constructor(props){

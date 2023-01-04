@@ -1,0 +1,45 @@
+.Languages {
+  grid-area: skills;
+  background-color: #414141 ;
+}
+
+.Languages p {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.RenderLanguages {
+  display: flex;
+  gap: 20px
+}
+
+.RenderLanguages > p  {
+  font-size: 12px;
+  letter-spacing: 0;
+}
+
+
+.NewLanguage > form {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.NewLanguage > form > input:nth-child(1) {
+  color: white;
+  font-size: 14px;
+  width: 30%;
+}
+
+.NewLanguage > form > input:nth-child(2) {
+  width: 20%;
+}
+
+.NewLanguage > form > span {
+  color: white;
+  font-size: 12px;
+  width: 80px;
+  padding-left: 10px
+}

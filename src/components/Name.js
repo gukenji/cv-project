@@ -1,23 +1,25 @@
 import React, { Component } from "react";
-import '../Name.css';
+import '../style/Name.css';
 
 class Name extends Component {
   constructor(props){
     super(props);
     this.state = {
-      fullname: { name: '',
-                  surname: '' },
+      myinfos: { name: '',
+                  surname: '',
+                  carreer: '' },
     }
   }
 
 
   render() {
-    const { fullname } = this.state;
+    const { myinfos } = this.state;
     return (
       <div className="Name">
         <form>
           <input type='text' id='name' placeholder='Qual seu nome?' />
           <input type='text' id='surname' placeholder='Qual seu sobrenome?' />
+          <input type='text' id='carreer' placeholder='Especialidade' />
         </form>
       </div>
     );

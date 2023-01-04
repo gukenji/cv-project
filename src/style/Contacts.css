@@ -1,0 +1,16 @@
+.Contacts {
+  grid-area: contacts;
+  background-color: green;
+}
+
+.Contacts > form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+}
+
+
+.Contacts > form > input {
+  font-size: 16px;
+}

@@ -5,8 +5,8 @@ import SocialLinks from './components/SocialLinks'
 import Name from './components/Name'
 import ProfessionalExperience from './components/ProfessionalExperience'
 import Education from './components/Education'
-import Skills from './components/Skills'
-import './App.css'
+import Languages from './components/Languages'
+import './style/App.css'
 
 class App extends Component {
   constructor(props){
@@ -22,7 +22,7 @@ class App extends Component {
         <Name />
         <ProfessionalExperience />
         <Education />
-        <Skills />
+        <Languages />
       </div>
     );
   }

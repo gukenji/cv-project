@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import '../SocialLinks.css';
+import '../style/SocialLinks.css';
 
 class SocialLinks extends Component {
   constructor(props){

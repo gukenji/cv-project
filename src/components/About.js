@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import '../About.css';
+import '../style/About.css';
 
 class About extends Component {
   constructor(props){
@@ -14,9 +14,8 @@ class About extends Component {
     const { description } = this.state;
     return (
       <div className="About">
-        <form>
-          <input type='text' id='description' placeholder='Escreva algo sobre você!' />
-        </form>
+        <p>SOBRE MIM</p>
+        <textarea maxlength="685" placeholder="Escreva algo sobre você aqui!"></textarea>
       </div>
     );
   }

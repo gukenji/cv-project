@@ -70,7 +70,7 @@ class Languages extends Component {
                     </div>
             )
           })}
-        <div className="NewLanguage">
+        <div className="NewLanguage no-print">
           <form>
             <input type='text' id='languages' placeholder='Idioma' onChange={this.handleChange} value={skill.text}/>
             <input type='range'  defaultValue="1" min="1" max="4" step="1" onClick={this.showValue}  onChange={this.handleChange} id="language-range" /> <span id="language-output"></span>

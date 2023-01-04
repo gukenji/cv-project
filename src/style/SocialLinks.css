@@ -3,10 +3,11 @@
   background-color: #414141;
 }
 
-.SocialLinks > p > span > input {
+.link {
   color: white;
   font-weight: bold;
   text-shadow: 2px 2px black;
+  font-size: 15px;
 }
 
 svg {
@@ -15,4 +16,9 @@ svg {
 
 .username {
   display: flex;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
 }

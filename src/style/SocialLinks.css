@@ -22,3 +22,8 @@ svg {
 .hidden {
   display: none;
 }
+
+.start-section {
+  margin: 0 4px;
+  border-bottom: 2px solid lightgray;
+}

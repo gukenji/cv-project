@@ -22,13 +22,15 @@ body,
 .ProfessionalExperience,
 .Languages,
 .SocialLinks {
-  padding: 30px 20px;
+  padding: 10px 20px;
 }
 
 input {
   background-color: transparent;
   border: none;
 }
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

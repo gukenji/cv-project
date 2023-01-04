@@ -23,6 +23,7 @@ class SocialLinks extends Component {
     const { links } = this.state;
     return (
       <div className="SocialLinks">
+          <p className="start-section"></p>
           <p><span className="username">{linkedin_svg}<span className="link hidden">www.linkedin.com/</span><input onChange={(e) => this.showLink(e)} className="link" type='text' id='linkedin' placeholder='Insira seu usuário do Linkedin' /></span></p>
           <p><span className="username">{github_svg}<span className="link hidden">www.github.com/</span><input onChange={(e) => this.showLink(e)} className="link" type='text' id='github' placeholder='Insira seu usuário do Github' /></span></p>
       </div>

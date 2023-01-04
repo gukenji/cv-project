@@ -18,3 +18,8 @@
   border: none;
   font-size: 12px;
 }
+
+.end-section {
+  margin: 0 4px;
+  border-bottom: 2px solid lightgray;
+}

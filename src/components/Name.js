@@ -16,11 +16,9 @@ class Name extends Component {
     const { myinfos } = this.state;
     return (
       <div className="Name">
-        <form>
-          <input type='text' id='name' placeholder='Qual seu nome?' />
-          <input type='text' id='surname' placeholder='Qual seu sobrenome?' />
-          <input type='text' id='carreer' placeholder='Especialidade' />
-        </form>
+          <input type='text' id='name' className="uppercase" placeholder='Qual seu nome?' />
+          <input type='text' id='surname' className="uppercase" placeholder='Qual seu sobrenome?' />
+          <input type='text' id='carreer' className="uppercase" placeholder='Especialidade' />
       </div>
     );
   }

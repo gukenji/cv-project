@@ -1,16 +1,18 @@
 .Contacts {
   grid-area: contacts;
-  background-color: green;
-}
-
-.Contacts > form {
+  background-color: white;
   display: flex;
+  gap: 5px;
   flex-direction: column;
-  gap: 15px;
-
+  justify-content: flex-end;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  border-bottom: 2px solid lightgray;
+  min-width: 250px;
 }
 
 
-.Contacts > form > input {
-  font-size: 16px;
+.Contacts > span {
+  display: flex;
+  gap: 5px;
 }

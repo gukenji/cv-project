@@ -18,6 +18,11 @@
 .RenderLanguages > p  {
   font-size: 12px;
   letter-spacing: 0;
+  align-self: center;
+}
+
+.RenderLanguages > p:nth-child(1) {
+  width: 30%;
 }
 
 

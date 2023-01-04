@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import LanguageMetric from "./LanguageMetric"
 import '../style/Languages.css';
 
 class Languages extends Component {
@@ -64,6 +65,7 @@ class Languages extends Component {
           {skills.map((skill) => {
             return (<div className="RenderLanguages">
                       <p>{skill.text}</p>
+                      <LanguageMetric skill = {skill.proficiency} />
                       <p>{this.proficiencyLevel(skill.proficiency)}</p>
                     </div>
             )

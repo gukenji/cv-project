@@ -1,0 +1,23 @@
+.LanguageMetric {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+
+.LanguageMetric > span {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid lightgray;
+}
+
+.painted {
+  background-color: green;
+}
+
+.unpainted {
+  background-color: white;
+}

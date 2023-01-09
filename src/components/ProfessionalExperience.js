@@ -1,4 +1,3 @@
-import { toHaveStyle } from "@testing-library/jest-dom/dist/matchers";
 import React, { Component } from "react";
 import "../style/ProfessionalExperience.css";
 
@@ -18,6 +17,7 @@ class ProfessionalExperience extends Component {
     };
     this.saveExperience = this.saveExperience.bind(this);
   }
+
   saveExperience(e) {
     e.preventDefault();
     this.setState({
@@ -31,17 +31,15 @@ class ProfessionalExperience extends Component {
         job_description: "",
       },
     });
-
-    console.log(this.state.experiences);
   }
 
   handleChange = (e) => {
     const company = document.getElementById("company").value;
     const state = document.getElementById("state").value;
-    const start_date = document.getElementById("exp_start_date").value;
-    const end_date = document.getElementById("exp_end_date").value;
-    const job_position = document.getElementById("job_position").value;
-    const job_description = document.getElementById("job_description").value;
+    const start_date = document.getElementById("exp-start-date").value;
+    const end_date = document.getElementById("exp-end-date").value;
+    const job_position = document.getElementById("job-position").value;
+    const job_description = document.getElementById("job-description").value;
     this.setState({
       experience: {
         company: company,
@@ -54,19 +52,56 @@ class ProfessionalExperience extends Component {
     });
   };
 
+  formatDate(date) {
+    const year = date.substring(0, 4);
+    var month = date.substring(5, 7);
+    var objDate = new Date();
+    const locale = "pt-br";
+
+    objDate.setDate(1);
+    objDate.setMonth(month - 1);
+    month = objDate.toLocaleString(locale, { month: "short" }).substring(0, 3);
+
+    return `${month}/${year}`;
+  }
+
   render() {
-    const { experience } = this.state;
+    const { experience, experiences } = this.state;
+
     return (
-      <div className="ProfessionalExperience no-print">
+      <div className="ProfessionalExperience">
         <p>EXPERIÊNCIAS PROFISSIONAIS</p>
-        <form>
-          <div className="left-side">
+        {experiences.map((exp) => {
+          return (
+            <div className="Experience">
+              <div className="render-left-side">
+                <p>{exp.company}</p>
+                <p>{exp.state}</p>
+                <p>
+                  <span>
+                    {this.formatDate(exp.start_date)} -{" "}
+                    {this.formatDate(exp.end_date)}
+                  </span>
+                </p>
+              </div>
+
+              <div className="render-right-side">
+                <p>{exp.job_position}</p>
+                <p>{exp.job_description}</p>
+              </div>
+            </div>
+          );
+        })}
+
+        <form className="no-print">
+          <div className="form-left-side">
             <input
               type="text"
               id="company"
               placeholder="Nome da empresa"
               value={experience.company}
               onChange={this.handleChange}
+              required
             />
             <input
               type="text"
@@ -74,28 +109,32 @@ class ProfessionalExperience extends Component {
               placeholder="Local do trabalho"
               value={experience.state}
               onChange={this.handleChange}
+              required
             />
             <span>
               <input
                 type="date"
-                id="exp_start_date"
+                id="exp-start-date"
                 placeholder="Data de Início"
                 value={experience.start_date}
                 onChange={this.handleChange}
+                required
               />
+              -
               <input
                 type="date"
-                id="exp_end_date"
+                id="exp-end-date"
                 placeholder="Data de Término"
                 value={experience.end_date}
                 onChange={this.handleChange}
+                required
               />
             </span>
           </div>
-          <div className="right-side">
+          <div className="form-right-side">
             <input
               type="text"
-              id="job_position"
+              id="job-position"
               placeholder="Cargo"
               value={experience.job_position}
               onChange={this.handleChange}
@@ -104,11 +143,11 @@ class ProfessionalExperience extends Component {
               maxlength="600"
               rows="5"
               cols="100"
-              id="job_description"
+              id="job-description"
               placeholder="Descrição do trabalho realizado"
               value={experience.job_description}
               onChange={this.handleChange}
-            ></textarea>
+            />
           </div>
           <button onClick={this.saveExperience}>Salvar</button>
         </form>

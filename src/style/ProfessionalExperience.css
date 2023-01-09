@@ -4,6 +4,11 @@
   margin-left: 20px;
 }
 
+.ProfessionalExperience > p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .ProfessionalExperience > form {
   display: flex;
   gap: 50px;
@@ -12,4 +17,55 @@
 .ProfessionalExperience > form > div {
   display: flex;
   flex-direction: column;
+}
+
+.Experience {
+  display: flex;
+  gap: 100px;
+}
+
+.render-left-side {
+  width: 250px;
+}
+.render-left-side > p:not(:last-child) {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.render-left-side > p:last-child {
+  font-weight: normal;
+}
+
+.render-right-side {
+  width: 800px;
+}
+
+.render-right-side > p:nth-child(1) {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.render-right-side > p:last-child {
+  font-size: 14px;
+}
+
+.form-left-side > span {
+  display: flex;
+  gap: 5px;
+  color: gray;
+}
+
+#exp-start-date,
+#exp-end-date {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  text-align: center;
+}
+
+input[type="date"]:invalid {
+  color: #999;
+}
+
+.form-right-side > textarea {
+  resize: vertical;
 }

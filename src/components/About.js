@@ -20,7 +20,6 @@ class About extends Component {
           maxlength="600"
           placeholder="Escreva algo sobre você aqui!"
         ></textarea>
-        <p className="end-section"></p>
       </div>
     );
   }

@@ -7,12 +7,15 @@ body,
 
 .App {
   display: grid;
-  grid-template-areas: 
+  grid-template-areas:
     "about  name contacts contacts"
     "about    prof prof prof"
-    "skills    prof prof prof"
+    "about    prof prof prof"
+    "about    prof prof prof"
     "skills    edu  edu  edu"
     "social    edu  edu  edu";
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .Contacts,
@@ -29,8 +32,6 @@ input {
   background-color: transparent;
   border: none;
 }
-
-
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -62,12 +63,9 @@ input {
   }
 }
 
-
-
-@media print
-{    
-    .no-print, .no-print *
-    {
-        display: none !important;
-    }
+@media print {
+  .no-print,
+  .no-print * {
+    display: none !important;
+  }
 }

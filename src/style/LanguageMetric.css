@@ -1,17 +1,24 @@
 .LanguageMetric {
-  height: 50px;
-  width: 50px;
   display: flex;
-  gap: 3px;
   align-items: center;
+  border-radius: 5px;
 }
 
-.LanguageMetric > span {
+.LanguageMetric > div:nth-child(1) {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.LanguageMetric > div:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.LanguageMetric > div {
   width: 10px;
   height: 10px;
   display: inline-block;
-  border-radius: 50%;
-  border: 1px solid lightgray;
+  border: 2px solid lightgray;
 }
 
 .painted {
@@ -19,5 +26,5 @@
 }
 
 .unpainted {
-  background-color: white;
+  background-color: inherit;
 }

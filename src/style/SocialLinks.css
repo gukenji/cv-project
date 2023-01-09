@@ -1,6 +1,14 @@
 .SocialLinks {
   grid-area: social;
   background-color: #414141;
+  border-bottom-left-radius: 30px;
+}
+
+.SocialLinks > p {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
 }
 
 .link {
@@ -11,7 +19,7 @@
 }
 
 svg {
-  padding-right: 10px
+  padding-right: 10px;
 }
 
 .username {

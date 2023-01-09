@@ -1,6 +1,6 @@
 .Languages {
   grid-area: skills;
-  background-color: #414141 ;
+  background-color: #414141;
 }
 
 .Languages p {
@@ -10,12 +10,17 @@
   letter-spacing: 2px;
 }
 
-.RenderLanguages {
-  display: flex;
-  gap: 20px
+.start-section {
+  margin: 0 4px;
+  border-bottom: 2px solid lightgray;
 }
 
-.RenderLanguages > p  {
+.RenderLanguages {
+  display: flex;
+  gap: 20px;
+}
+
+.RenderLanguages > p {
   font-size: 12px;
   letter-spacing: 0;
   align-self: center;
@@ -24,7 +29,6 @@
 .RenderLanguages > p:nth-child(1) {
   width: 30%;
 }
-
 
 .NewLanguage > form {
   display: flex;
@@ -46,5 +50,5 @@
   color: white;
   font-size: 12px;
   width: 80px;
-  padding-left: 10px
+  padding-left: 10px;
 }

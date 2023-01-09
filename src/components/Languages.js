@@ -61,6 +61,7 @@ class Languages extends Component {
     const { skills, skill } = this.state;
     return (
       <div className="Languages">
+        <div className="start-section"></div>
         <p>IDIOMAS</p>
         {skills.map((skill) => {
           return (

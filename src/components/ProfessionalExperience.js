@@ -57,12 +57,15 @@ class ProfessionalExperience extends Component {
     var month = date.substring(5, 7);
     var objDate = new Date();
     const locale = "pt-br";
+    const currentMonth = new Date().getMonth() + 1;
+    const currentYear = new Date().getFullYear();
+    const isActual =
+      parseInt(month) == currentMonth && parseInt(year) == currentYear;
 
     objDate.setDate(1);
     objDate.setMonth(month - 1);
     month = objDate.toLocaleString(locale, { month: "short" }).substring(0, 3);
-
-    return `${month}/${year}`;
+    return isActual ? "Atual" : `${month}/${year}`;
   }
 
   render() {
@@ -71,7 +74,7 @@ class ProfessionalExperience extends Component {
     return (
       <div className="ProfessionalExperience">
         <p>EXPERIÊNCIAS PROFISSIONAIS</p>
-        {experiences.map((exp) => {
+        {experiences.reverse().map((exp) => {
           return (
             <div className="Experience">
               <div className="render-left-side">

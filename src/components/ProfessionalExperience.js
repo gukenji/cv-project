@@ -74,7 +74,7 @@ class ProfessionalExperience extends Component {
     return (
       <div className="ProfessionalExperience">
         <p>EXPERIÊNCIAS PROFISSIONAIS</p>
-        {experiences.reverse().map((exp) => {
+        {experiences.reverse().map((exp, index) => {
           return (
             <div className="Experience">
               <div className="render-left-side">
@@ -87,7 +87,17 @@ class ProfessionalExperience extends Component {
                   </span>
                 </p>
               </div>
-
+              <div className="timeline">
+                {(() => {
+                  console.log(index);
+                  console.log(experiences.length);
+                  console.log(index == experiences.length - 1);
+                  if (index == experiences.length - 1) {
+                    return <div className="first-point"></div>;
+                  }
+                })()}
+                <div className="point"></div>
+              </div>
               <div className="render-right-side">
                 <p>{exp.job_position}</p>
                 <p>{exp.job_description}</p>
@@ -95,7 +105,6 @@ class ProfessionalExperience extends Component {
             </div>
           );
         })}
-
         <form className="no-print">
           <div className="form-left-side">
             <input

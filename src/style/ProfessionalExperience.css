@@ -23,11 +23,11 @@
 .Experience {
   display: flex;
   gap: 100px;
-  margin-bottom: 20px;
 }
 
 .Experience > .render-left-side {
   width: 250px;
+  margin-bottom: 30px;
 }
 .Experience > .render-left-side > p:first-child {
   margin: 0;
@@ -44,8 +44,37 @@
   margin: 6px 0;
 }
 
+.Experience > .timeline {
+  border: 2px solid gray;
+  position: relative;
+}
+
+.Experience > .timeline > .first-point {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: gray;
+  box-shadow: 1px 1px 1px black;
+  border: 1px solid lightgray;
+  position: absolute;
+  bottom: -5px;
+  left: -10px;
+}
+.Experience > .timeline > .point {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid lightgray;
+  background-color: gray;
+  box-shadow: 1px 1px 1px black;
+  position: absolute;
+  left: -10px;
+  top: -5px;
+}
+
 .Experience > .render-right-side {
   width: 800px;
+  margin-bottom: 30px;
 }
 
 .Experience > .render-right-side > p:nth-child(1) {
@@ -66,6 +95,9 @@ input[type="date"]:invalid {
   color: #999;
 }
 
+form {
+  margin-top: 20px;
+}
 form > .form-left-side > span {
   display: flex;
   gap: 5px;
@@ -76,9 +108,30 @@ form > .form-right-side > textarea {
   resize: vertical;
 }
 
+form > button {
+  background-color: none;
+  border: none;
+  width: 100px;
+  height: 50px;
+  align-self: center;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px black;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+form > button:hover {
+  background-color: lightgreen;
+  cursor: pointer;
+}
+
+#company,
+#state,
+#job-position,
 #exp-start-date,
 #exp-end-date {
   border: 1px solid lightgray;
+  margin-bottom: 3px;
   border-radius: 5px;
-  text-align: center;
 }

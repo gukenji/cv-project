@@ -89,9 +89,6 @@ class ProfessionalExperience extends Component {
               </div>
               <div className="timeline">
                 {(() => {
-                  console.log(index);
-                  console.log(experiences.length);
-                  console.log(index == experiences.length - 1);
                   if (index == experiences.length - 1) {
                     return <div className="first-point"></div>;
                   }

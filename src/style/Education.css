@@ -1,9 +1,35 @@
-.Education {
+.Educations {
   grid-area: edu;
   background-color: white;
+  margin: 0 20px 30px 20px;
 }
 
-.Education > p {
-  font-size: 20px;
+.Educations > p {
+  font-size: 30px;
   font-weight: bold;
+}
+
+.Educations > form {
+  display: flex;
+  gap: 50px;
+}
+
+.Educations > form > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.Education {
+  display: flex;
+  gap: 100px;
+}
+
+#institute,
+#edu-start-date,
+#edu-end-date,
+#edu-type,
+#edu-course {
+  border: 1px solid lightgray;
+  margin-bottom: 3px;
+  border-radius: 5px;
 }

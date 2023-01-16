@@ -18,7 +18,7 @@ class About extends Component {
         {/* é possivel aumentar ou diminuir o length de acordo com o espaco disponivel? */}
         {/* tentar manter heights fixos para cada seção, porém nâo é o ideal caso a pessoa escreva pouco em About Me ou coloque poucos idiomas */}
         <textarea
-          maxlength="600"
+          maxlength="1000"
           placeholder="Escreva algo sobre você aqui!"
         ></textarea>
       </div>

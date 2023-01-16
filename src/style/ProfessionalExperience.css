@@ -6,7 +6,7 @@
 }
 
 .ProfessionalExperience > p {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -25,65 +25,7 @@
   gap: 100px;
 }
 
-.Experience > .render-left-side {
-  width: 250px;
-  margin-bottom: 30px;
-}
-.Experience > .render-left-side > p:first-child {
-  margin: 0;
-}
-
-.Experience > .render-left-side > p:not(:last-child) {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.Experience > .render-left-side > p:last-child {
-  font-weight: normal;
-  margin: 6px 0;
-}
-
-.Experience > .timeline {
-  border: 2px solid gray;
-  position: relative;
-}
-
-.Experience > .timeline > .first-point {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: gray;
-  box-shadow: 1px 1px 1px black;
-  border: 1px solid lightgray;
-  position: absolute;
-  bottom: -5px;
-  left: -10px;
-}
-.Experience > .timeline > .point {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: 1px solid lightgray;
-  background-color: gray;
-  box-shadow: 1px 1px 1px black;
-  position: absolute;
-  left: -10px;
-  top: -5px;
-}
-
-.Experience > .render-right-side {
-  width: 800px;
-  margin-bottom: 30px;
-}
-
-.Experience > .render-right-side > p:nth-child(1) {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.Experience > .render-right-side > p:last-child {
+.render-right-side > p:last-child {
   font-size: 14px;
   margin: 0;
   word-break: break-all;
@@ -91,13 +33,6 @@
   line-height: 25px;
 }
 
-input[type="date"]:invalid {
-  color: #999;
-}
-
-form {
-  margin-top: 20px;
-}
 form > .form-left-side > span {
   display: flex;
   gap: 5px;

@@ -6,7 +6,7 @@ import Name from "./components/Name";
 import ProfessionalExperience from "./components/ProfessionalExperience";
 import Education from "./components/Education";
 import Languages from "./components/Languages";
-import ills from "./components/Skills";
+import Skills from "./components/Skills";
 import "./style/App.css";
 
 class App extends Component {

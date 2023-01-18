@@ -12,7 +12,7 @@ body,
     "about    prof prof prof"
     "about    prof prof prof"
     "skills    edu  edu  edu"
-    "social    edu  edu  edu";
+    "social    skl  skl  skl";
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
@@ -23,7 +23,8 @@ body,
 .Name,
 .ProfessionalExperience,
 .Languages,
-.SocialLinks {
+.SocialLinks,
+.Skills {
   padding: 10px 20px;
 }
 

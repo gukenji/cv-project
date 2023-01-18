@@ -1,0 +1,36 @@
+.Skills {
+  grid-area: skl;
+  background-color: white;
+  margin: 0 20px 30px 20px;
+}
+.Skills > p {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.Skills > #render-images {
+  display: flex;
+  gap: 30px;
+}
+
+.Skills > #render-images > .skill-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Skills > #render-images > .skill-container > p {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.Skills > #search-images {
+  display: flex;
+}
+
+#search-images-input {
+  border: 1px solid lightgray;
+  margin-bottom: 3px;
+  border-radius: 5px;
+}

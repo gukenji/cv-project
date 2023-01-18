@@ -3,6 +3,7 @@ body,
 #root,
 .App {
   height: 100%;
+  position: relative;
 }
 
 .App {
@@ -120,6 +121,27 @@ form {
   font-size: 18px;
   font-weight: bold;
   margin: 0;
+}
+
+.modal {
+  background-color: white;
+  border: 1px solid gray;
+  display: flex;
+  position: absolute;
+  height: 500px;
+  bottom: 0%;
+  padding: 0 20px;
+  left: 10%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  gap: 40px;
+  flex: 1;
+  align-items: center;
+  margin: 0 auto;
 }
 
 @media (prefers-reduced-motion: no-preference) {

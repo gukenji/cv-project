@@ -10,7 +10,8 @@
 
 .Skills > #render-images {
   display: flex;
-  gap: 30px;
+  gap: 60px;
+  flex-wrap: wrap;
 }
 
 .Skills > #render-images > .skill-container {
@@ -32,5 +33,30 @@
 #search-images-input {
   border: 1px solid lightgray;
   margin-bottom: 3px;
+  border-radius: 5px;
+}
+
+#close_button {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+#close_button:hover {
+  background-color: red;
+  border-radius: 50%;
+}
+
+.img_icon {
+  cursor: pointer;
+}
+
+.img_icon:hover {
+  background-color: lightgreen;
+  border: 1px solid lightgray;
+  padding: 10px;
   border-radius: 5px;
 }

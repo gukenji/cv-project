@@ -1,6 +1,7 @@
 .Languages {
   grid-area: skills;
   background-color: #414141;
+  padding: 10px 20px;
 }
 
 .Languages p {
@@ -22,7 +23,7 @@
 }
 
 .RenderLanguages > p {
-  font-size: 12px;
+  font-size: 15px;
   letter-spacing: 0;
   align-self: center;
 }
@@ -52,4 +53,16 @@
   font-size: 12px;
   width: 80px;
   padding-left: 10px;
+}
+
+@media print {
+  .Languages p {
+    font-size: 17px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px black;
+  }
+
+  .RenderLanguages > p {
+    font-size: 12px;
+  }
 }

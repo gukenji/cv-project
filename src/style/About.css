@@ -1,6 +1,7 @@
 .About {
   grid-area: about;
   background-color: #414141;
+  padding: 10px 20px;
 }
 
 .About p {
@@ -19,4 +20,16 @@
   border: none;
   font-size: 15px;
   resize: none;
+}
+
+@media print {
+  .About p {
+    font-size: 17px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px black;
+  }
+
+  .About textarea {
+    font-size: 12px;
+  }
 }

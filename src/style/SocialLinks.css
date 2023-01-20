@@ -2,6 +2,7 @@
   grid-area: social;
   background-color: #414141;
   border-bottom-left-radius: 30px;
+  padding: 10px 20px 50px 20px;
 }
 
 .SocialLinks > p {
@@ -28,6 +29,11 @@ svg {
   align-items: center;
 }
 
+.username:nth-of-type(1) {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
 .hidden {
   display: none;
 }
@@ -35,4 +41,24 @@ svg {
 .start-section {
   margin: 0 4px;
   border-bottom: 2px solid lightgray;
+}
+
+@media print {
+  .SocialLinks {
+    padding: 10px 20px 20px 20px;
+  }
+  .SocialLinks > p {
+    font-size: 17px;
+  }
+
+  .username:nth-of-type(1) {
+    margin-top: 40px;
+  }
+
+  .link {
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+    font-size: 12x;
+  }
 }

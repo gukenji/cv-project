@@ -43,32 +43,30 @@ class SocialLinks extends Component {
       <div className="SocialLinks">
         <p className="start-section"></p>
         <p>REDES SOCIAIS</p>
-        <p>
-          <span className="username">
-            {linkedin_svg}
-            <span className="link hidden">linkedin.com/</span>
-            <input
-              onChange={(e) => this.showLink(e)}
-              className="link"
-              type="text"
-              id="linkedin"
-              placeholder="Insira seu usuário do Linkedin"
-            />
-          </span>
-        </p>
-        <p>
-          <span className="username">
-            {github_svg}
-            <span className="link hidden">github.com/</span>
-            <input
-              onChange={(e) => this.showLink(e)}
-              className="link"
-              type="text"
-              id="github"
-              placeholder="Insira seu usuário do Github"
-            />
-          </span>
-        </p>
+
+        <span className="username">
+          {linkedin_svg}
+          <span className="link hidden">linkedin.com/</span>
+          <input
+            onChange={(e) => this.showLink(e)}
+            className="link"
+            type="text"
+            id="linkedin"
+            placeholder="Insira seu usuário do Linkedin"
+          />
+        </span>
+
+        <span className="username">
+          {github_svg}
+          <span className="link hidden">github.com/</span>
+          <input
+            onChange={(e) => this.showLink(e)}
+            className="link"
+            type="text"
+            id="github"
+            placeholder="Insira seu usuário do Github"
+          />
+        </span>
       </div>
     );
   }

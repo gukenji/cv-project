@@ -18,17 +18,6 @@ body,
   border-bottom-left-radius: 5px;
 }
 
-.Contacts,
-.About,
-.Educations,
-.Name,
-.ProfessionalExperience,
-.Languages,
-.SocialLinks,
-.Skills {
-  padding: 10px 20px;
-}
-
 input {
   background-color: transparent;
   border: none;
@@ -160,6 +149,21 @@ form {
 }
 
 @media print {
+  .App {
+    display: grid;
+    grid-template-areas:
+      "about  name contacts contacts"
+      "about    prof prof prof"
+      "skills    edu  edu  edu"
+      "social    skl  skl  skl";
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    font-size: 10px;
+    max-height: 297mm;
+    max-width: 210mm;
+  }
   .no-print,
   .no-print * {
     display: none !important;

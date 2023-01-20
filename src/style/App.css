@@ -159,7 +159,7 @@ form {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 2fr 2fr;
     font-size: 10px;
     max-height: 297mm;
     max-width: 210mm;

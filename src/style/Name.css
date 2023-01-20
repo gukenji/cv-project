@@ -24,3 +24,19 @@
 .uppercase {
   text-transform: uppercase;
 }
+
+@media print {
+  #name,
+  #surname {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  #carreer {
+    font-size: 16px;
+  }
+
+  .Name {
+    margin-bottom: 10px;
+  }
+}

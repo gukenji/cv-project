@@ -35,3 +35,9 @@
   margin-bottom: 3px;
   border-radius: 5px;
 }
+
+@media print {
+  .Educations > p {
+    font-size: 17px;
+  }
+}

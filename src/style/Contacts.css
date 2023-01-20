@@ -27,3 +27,23 @@
   display: flex;
   flex-direction: column;
 }
+
+@media print {
+  .Contacts {
+    margin-bottom: 10px;
+  }
+  .Contacts > span > input,
+  .Contacts > span > .address > input {
+    font-size: 8px;
+  }
+
+  .Contacts > span {
+    gap: 2px;
+  }
+
+  .Contacts > span > svg {
+    width: 10px;
+    height: 10px;
+    font-size: 8px;
+  }
+}

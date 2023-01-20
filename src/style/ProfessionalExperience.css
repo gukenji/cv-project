@@ -9,6 +9,7 @@
 .ProfessionalExperience > p {
   font-size: 30px;
   font-weight: bold;
+  margin-top: 0;
 }
 
 .ProfessionalExperience > form {
@@ -70,4 +71,10 @@ form > button:hover {
   border: 1px solid lightgray;
   margin-bottom: 3px;
   border-radius: 5px;
+}
+
+@media print {
+  .ProfessionalExperience > p {
+    font-size: 17px;
+  }
 }

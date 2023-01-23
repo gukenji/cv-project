@@ -4,12 +4,20 @@
   padding: 10px 20px;
 }
 
-.About p {
+.About > p:nth-of-type(1) {
   color: white;
   font-weight: bold;
   font-size: 30px;
   letter-spacing: 2px;
   text-shadow: 2px 2px black;
+}
+
+.About > #description {
+  font-size: 14px;
+  color: white;
+  letter-spacing: 1px;
+  word-break: break-all;
+  white-space: pre-line;
 }
 
 .About textarea {
@@ -23,13 +31,15 @@
 }
 
 @media print {
-  .About p {
+  .About > p:nth-of-type(1) {
     font-size: 17px;
     letter-spacing: 2px;
     text-shadow: 1px 1px black;
   }
 
-  .About textarea {
-    font-size: 12px;
+  .About > #description {
+    font-size: 10px;
+    color: white;
+    letter-spacing: 1px;
   }
 }

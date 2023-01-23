@@ -54,6 +54,12 @@ svg {
   .username:nth-of-type(1) {
     margin-top: 40px;
   }
+  .username > span {
+    font-size: 10px;
+  }
+  .username > input {
+    font-size: 10px;
+  }
 
   .link {
     color: white;

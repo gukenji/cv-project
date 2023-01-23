@@ -46,7 +46,7 @@ class SocialLinks extends Component {
 
         <span className="username">
           {linkedin_svg}
-          <span className="link hidden">linkedin.com/</span>
+          <span className="link hidden">linkedin.com/in/</span>
           <input
             onChange={(e) => this.showLink(e)}
             className="link"

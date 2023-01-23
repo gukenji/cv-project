@@ -149,7 +149,7 @@ class ProfessionalExperience extends Component {
               onChange={this.handleChange}
             />
             <textarea
-              maxlength="600"
+              maxlength="1200"
               rows="5"
               cols="100"
               id="job-description"
